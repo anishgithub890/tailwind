@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply text-black;
+    /* font-family: 'Roboto', sans-serif; */
+  }
+  /* h1 {
+    @apply text-black;
+  } */
+  input[type='checkbox'] {
+    @apply text-sm font-medium text-gray-900 dark:text-gray-300 checked:accent-purple-700 mr-1 mt-0.5;
+  }
+}
+
+html,
+body,
+:root {
+  height: 100%;
+}
+
+.leaflet-bottom,
+.leaflet-control,
+.leaflet-pane,
+.leaflet-top {
+  z-index: 0 !important;
+}
+
+.rdrMonth {
+  width: 100% !important;
+}
+
+.rdrCalendarWrapper {
+  font-size: 16px !important;
+  width: 100% !important;
+}
